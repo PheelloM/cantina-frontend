@@ -1,0 +1,23 @@
+/* Full-height container to center the content */
+.centered-container {
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    height: 100vh;             /* Full viewport height */
+}
+
+.btn-outline {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;            /* Spacing between buttons */
+    border: 2px solid #333;    /* Outline style */
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #333;    /* Background on hover */
+    color: #fff;               /* Text color on hover */
+}
