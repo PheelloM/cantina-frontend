@@ -21,6 +21,7 @@ export class LoginComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   onSubmit(){
+    debugger
     if(this.loginForm.valid){
       console.log(this.loginForm.value);
       this.authService.login(this.loginForm.value)
