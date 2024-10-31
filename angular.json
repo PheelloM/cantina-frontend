@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cantina-ui:build:production"
+              "buildTarget": "cantina-ui:build:production"
             },
             "development": {
-              "browserTarget": "cantina-ui:build:development"
+              "buildTarget": "cantina-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cantina-ui:build"
+            "buildTarget": "cantina-ui:build"
           }
         },
         "test": {
