@@ -1,0 +1,9 @@
+    <div *ngFor="let dish of dishes" >
+      <h3>{{ dish.name }}</h3>
+      <img [src]="dish?.imageUrl" alt="{{ dish.name }}">
+      <p>{{ dish.description }}</p>
+      <p>Price: ${{ dish.price }}</p>
+      <button class="btn btn-outline" (click)="viewDetails(dish.id!)">View Details</button>
+      <button class="btn btn-danger" (click)="deleteDish(dish.id!)">Delete</button>
+    </div>
+

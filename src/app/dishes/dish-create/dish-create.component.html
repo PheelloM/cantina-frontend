@@ -1,0 +1,21 @@
+<h2>Add New Dish</h2>
+<form [formGroup]="dishForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Dish Name:</label>
+    <input id="name" formControlName="name" type="text" />
+  </div>
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" formControlName="description"></textarea>
+  </div>
+  <div>
+    <label for="price">Price:</label>
+    <input id="price" formControlName="price" type="number" />
+  </div>
+  <div>
+    <label for="imageUrl">Image URL:</label>
+    <input id="imageUrl" formControlName="imageUrl" type="text" />
+  </div>
+  <button class="btn btn-outline" type="submit" [disabled]="dishForm.invalid">Add Dish</button>
+</form>
+

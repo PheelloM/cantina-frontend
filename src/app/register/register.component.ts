@@ -25,12 +25,12 @@ export class RegisterComponent {
       if (this.signupForm.valid) {
         console.log(this.signupForm.value);
         this.authService.signup(this.signupForm.value)
-          .subscribe({
-            next: (data: any) => {
-              console.log(data);
-              this.router.navigate(['/login']);
-            },
-            error: (err) => console.log(err)
+          .subscribe((data: any) => {
+            if(data){
+              debugger
+              this.router.navigateByUrl('/login');
+            }
+            console.log(data);
           });
       }
     }

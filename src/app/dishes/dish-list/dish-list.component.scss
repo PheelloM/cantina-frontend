@@ -1,0 +1,32 @@
+.btn-outline {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;            /* Spacing between buttons */
+    border: 2px solid #333;    /* Outline style */
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #333;    /* Background on hover */
+    color: #fff;               /* Text color on hover */
+    
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    margin-left: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;            /* Spacing between buttons */
+    border: 2px solid #333;
+    cursor: pointer;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c0392b;
+  }
+  

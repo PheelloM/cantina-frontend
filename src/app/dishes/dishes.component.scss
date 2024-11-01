@@ -1,0 +1,29 @@
+.dishes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .dish-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .dish-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .dish-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+  }
+  
+  

@@ -6,7 +6,6 @@ import { tap } from 'rxjs/operators';
     providedIn: 'root',
   })
   export class AuthService {
-    //httpClient = inject(HttpClient);
     baseUrl = 'http://localhost:8080/api/auth';
 
     constructor(private httpClient: HttpClient) { }
@@ -31,5 +30,9 @@ import { tap } from 'rxjs/operators';
     isLoggedIn() {
         return localStorage.getItem('token') !== null;
     }
+
+    getToken(): string | null {
+        return localStorage.getItem('token');
+      }
     
   }
