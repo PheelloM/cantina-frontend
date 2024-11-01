@@ -16,18 +16,20 @@ import { tap } from 'rxjs/operators';
     }
 
     login(data: any) {
-        return this.httpClient.post(`${this.baseUrl}/login`, data)
-          .pipe(tap((result) => {
-            localStorage.setItem('authUser', JSON.stringify(result));
+        return this.httpClient.post(`${this.baseUrl}/login`, data, { responseType: 'text' })
+          .pipe(tap((token : string) => {
+            debugger
+            if(token)
+            localStorage.setItem('token', token);
         }));
     }
 
     logout() {
-        localStorage.removeItem('authUser');
+        localStorage.removeItem('token');
     }
 
     isLoggedIn() {
-        return localStorage.getItem('authUser') !== null;
+        return localStorage.getItem('token') !== null;
     }
     
   }

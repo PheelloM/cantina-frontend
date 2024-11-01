@@ -27,7 +27,7 @@ export class LoginComponent {
       this.authService.login(this.loginForm.value)
       .subscribe((data: any) => {
         if(this.authService.isLoggedIn()){
-          this.router.navigate(['/dashboard-menu']);
+          this.router.navigateByUrl('/dashboard-menu');
         }
         console.log(data);
       });
